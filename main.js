@@ -58,7 +58,9 @@ home.addEventListener('click', function() {
     let userName = document.getElementById("userName");
     let userNumber = document.getElementById("userNumber");
     let userMoney = document.getElementById("userMoney");
-    userBalance.textContent = `Your current account balance is ${balance - userMoney.value}`
+    let currentBal = balance - userMoney.value;
+    balance = currentBal;
+    userBalance.textContent = `Your current account balance is ${currentBal}`
      userName.value = "";
      userMoney.value = "";
      userNumber.value ="";
