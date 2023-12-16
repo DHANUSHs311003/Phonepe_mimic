@@ -45,13 +45,13 @@ payBtn.addEventListener('click', function() {
         });
 
         moneyPromise.then(() => {
-            // Update balance on success
+            
             balance -= parseInt(userMoney.value);
             userBalance.textContent = `Your current account balance is ₹${balance}`;
             processImg.src = "https://media.tenor.com/bm8Q6yAlsPsAAAAj/verified.gif";
             container_2.append(text1);
         }).catch(() => {
-            // Update balance on failure
+            
             balance = parseInt(balance);
             userBalance.textContent = `Your current account balance is ₹${balance}`;
             processImg.src = "https://i0.wp.com/nrifuture.com/wp-content/uploads/2022/05/comp_3.gif?fit=800%2C600&ssl=1";
